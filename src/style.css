@@ -1,0 +1,793 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body
+{
+    background-color: #f9fafb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner-top img {
+   max-width: 100%;; /* Thay đổi kích thước theo mong muốn */
+    display: block;
+    margin: auto;
+}
+
+.header-top form {
+    margin-left: auto; /* Đẩy form về bên phải */
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.search-box {
+    border: none;
+    padding: 5px;
+    width: 200px; /* Điều chỉnh độ rộng */
+    outline: none;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-container {
+    position: relative;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-left: 60px;
+    padding-right: 300px;
+}
+
+.search-box {
+    border: none;
+    padding: 8px 35px 8px 10px; /* Chừa khoảng trống bên phải cho icon */
+    width: 200px;
+    outline: none;
+    border-radius: 20px;
+}
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.icon-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.header-top .icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 30px;
+    filter: invert(1) brightness(1000%) contrast(1000%);
+}
+
+.header-top .icon.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: blur(1px) invert(1) brightness(1000%) contrast(1000%);
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 12%;
+    background-color: #2A83E9;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Khi lướt xuống, thêm class này để cố định header */
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
+    z-index: 1000;
+}
+
+
+[class^="iconnewglobal-"], [class*="iconnewglobal-"] {
+    background-image: url(https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/homev2/desk/iconnew-min.png?v=6);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-size: 310px 257px;
+}
+
+.iconnewglobal-logoheaddmx {
+    background-position: 0 -130px;
+    width: 229px;
+    height: 41px;
+}
+
+.header-top span {
+    padding-left: 5px;
+    font-size: 22px;
+    color: white;
+}
+.header-list a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #1F6CD4;
+}
+.header-list 
+{
+    background-color:#f2f4f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+.header-banner img
+{
+    max-width:80%;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;    
+    margin-top: 30px;
+}
+.header-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0; /* Tăng padding để phủ nền */
+}
+
+.header-product ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Dàn đều các danh mục */
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.header-product li {
+    margin-top: 20px;
+}
+
+.header-product li > div {
+    margin-bottom: 25px;
+}
+
+.cate-item {
+    text-align: center;
+    width: 180px; /* Tăng độ rộng danh mục */
+}
+
+.cate-item img {
+    display: block;
+    margin: 0 auto;
+    width: 70px; /* Tăng kích thước icon */
+    height: 70px;
+}
+
+.cate-item p {
+    margin-top: 10px;
+    font-size: 20px; /* Tăng kích thước chữ */
+    font-weight: bold;
+    color: white;
+}
+.header-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Bóng nhẹ hơn */
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0; /* Tăng padding để phủ nền */
+    margin-top: 30px;
+}
+
+.header-product ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; /* Dàn đều các danh mục */
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.header-product li {
+    margin-top: 20px;
+}
+
+.header-product li > div {
+    margin-bottom: 25px;
+}
+
+.cate-item {
+    text-align: center;
+    width: 180px; /* Tăng độ rộng danh mục */
+}
+
+.cate-item img {
+    display: block;
+    margin: 0 auto;
+    width: 70px; /* Tăng kích thước icon */
+    height: 70px;
+}
+
+.cate-item p {
+    margin-top: 10px;
+    font-size: 20px; /* Tăng kích thước chữ */
+    color: black;
+    text-decoration: none;
+    font-weight: 100;
+}
+.cate-item a {
+    text-decoration: none; /* Bỏ dấu gạch chân */
+}
+.cate-item:hover {
+    opacity: 0.9; /* Giảm độ mờ */
+    filter: brightness(0.85); /* Làm tối nhẹ hơn */
+    background-color: rgba(255, 255, 255, 0.6); /* Nền sáng hơn */
+    transition: all 0.3s ease-in-out;
+}
+.header-product li:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Nền đậm hơn nữa */
+    transition: background-color 0.3s ease-in-out;
+}
+
+.text-khuyenmai
+{
+    font-size: 30px;
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.khuyenmai {
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Bóng nhẹ hơn */
+    border-radius: 10px;
+}
+.icon-khuyenmai
+{
+    display: flex;
+    justify-content: space-between;
+}
+.icon-khuyenmai span
+{
+    font-size: 20px;
+    padding-top: 50px;
+    padding-right: 20px;
+}
+.icon-khuyenmai img {
+    width: 200px; /* Hoặc chỉnh theo ý muốn */
+    height: auto; /* Giữ tỉ lệ ảnh */
+}
+.body-top {
+    display: flex;
+    justify-content: space-between; /* Hoặc dùng space-around, space-evenly tùy thích */
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 97%;
+    margin: auto;
+    margin-top: 40px;
+}
+.body-bot {
+    display: flex;
+    justify-content: space-between; /* Hoặc dùng space-around, space-evenly tùy thích */
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 97%;
+    margin: auto;
+    margin-top: 20px;
+}
+hr {
+    border: 0.5px solid rgba(150, 150, 150, 0.15); /* Viền màu xám nhẹ */
+}
+
+.item {
+    flex: 1;
+    max-width: calc(97% / 6 - 10px);
+    text-align: center;
+    padding: 15px;
+    border: 1px solid rgba(150, 150, 150, 0.2);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 320px; /* Đảm bảo các item có cùng chiều cao */
+}
+
+/* Hình ảnh sản phẩm */
+.item .item-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px; /* Đảm bảo ảnh có cùng chiều cao */
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Đảm bảo hình ảnh không bị méo */
+}
+
+/* Tiêu đề sản phẩm */
+.item h3 {
+    color: black;
+    font-size: 15px;
+    min-height: 40px; /* Giữ tiêu đề đồng đều, tránh lệch hàng */
+    margin: 5px 0;
+    font-weight: 200;
+}
+
+/* Giá sản phẩm */
+.item .price {
+    color: red;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+/* Giá cũ */
+.item .price-old {
+    font-size: 14px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* Phần trăm giảm giá */
+.item small {
+    color: red;
+    font-size: 14px;
+}
+.item a
+{
+    text-decoration: none;
+}
+/* Số lượng hàng tồn kho */
+.fs-contain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    gap: 5px; /* Khoảng cách giữa icon và chữ */
+    background-color: rgba(255, 165, 0, 0.5); /* Màu nền nhạt */;
+    margin-top: 10px;
+}
+
+.fs-iconfire img {
+    width: 18px;
+    height: 18px;
+}
+
+.rq_count {
+    font-weight: bold;
+    color: black;
+}
+
+/* Button "Mua ngay" */
+.item .btn-buy {
+    padding: 8px;
+    background: #f1f8fe;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold   ;
+}
+.item .btn-buy a 
+{
+    color: #2A83E9;
+}
+.item button:hover {
+    background: #0056b3;
+}   
+
+body {
+    width: 1800px;
+    margin: 0 auto;  /* Căn giữa trang */
+    }
+
+.xemthem a
+{
+    color: #2A83E9;
+    justify-content: center;
+    display: flex;
+    padding-top: 30px ;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 50%; /* 50% trừ đi khoảng trống giữa ảnh */
+    object-fit: cover;
+    border-radius: 15px;
+}
+.slides span
+{
+    color: white;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Màu trắng mờ 50% */
+    color: black;
+    border: none;
+    padding: 15px; /* Tăng kích thước */
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%;
+    width: 40px;  /* Đảm bảo nút hình tròn */
+    height: 40px; /* Đảm bảo nút hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.5; /* Mờ 50% */
+}
+
+button:hover {
+    background-color: white; /* Hiện rõ khi hover */
+    opacity: 1;
+}
+
+.prev { 
+    left: 5px;  
+}
+
+.next { 
+    right: 5px;  
+}
+
+
+.iconnewglobal-vote {
+    background-position: -129px 0;
+    width: 12px;
+    height: 15px;
+}
+.Goiychoban 
+{
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Bóng nhẹ hơn */
+    border-radius: 10px;
+    margin-top: 25px;    
+}
+.Goiychoban .top 
+{
+    display: flex;
+    justify-content: space-between; /* Hoặc dùng space-around, space-evenly tùy thích */
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 97%;
+    margin: auto;
+    margin-top: 40px;
+}
+.Goiychoban .bot 
+{
+    display: flex;
+    justify-content: space-between; /* Hoặc dùng space-around, space-evenly tùy thích */
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 97%;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+}
+#kotracham >a
+{
+    padding-top: 18px;
+}
+#kotracham .item-compare
+{
+    padding-top: 3px;
+}
+#kotracham .box-p {
+    min-height: 50px; /* Đảm bảo chiều cao như các item khác */
+    display: flex;
+    align-items: center;
+}
+#kotracham strong {
+    position: relative;
+    top: 16px; /* Di chuyển xuống */
+}
+.Goiychoban .top .result-label#do {
+    background: linear-gradient(to right, #e91f63, #db2663);
+    margin-right: 40px;
+}
+.Goiychoban .bot .result-label#do {
+    background: linear-gradient(to right, #e91f63, #db2663);
+    margin-right: 40px;
+}
+
+.Goiychoban .top .result-label {
+    background: linear-gradient(to right, #0358d6, #054bab);
+    border-radius: 20px; /* Bo tròn hai đầu */
+    display: inline-flex; /* Giúp căn giữa icon và chữ */
+    align-items: center; /* Canh giữa nội dung */
+    color: white; /* Chữ màu trắng */
+    font-size: 14px; /* Chỉnh cỡ chữ */
+    padding-right: 6px;
+    margin-right: 15px;
+}
+
+.Goiychoban .bot .result-label {
+    background: linear-gradient(to right, #0358d6, #054bab);
+    border-radius: 20px; /* Bo tròn hai đầu */
+    display: inline-flex; /* Giúp căn giữa icon và chữ */
+    align-items: center; /* Canh giữa nội dung */
+    color: white; /* Chữ màu trắng */
+    font-size: 14px; /* Chỉnh cỡ chữ */
+    padding-right: 6px;
+    margin-right: 15px;
+}
+/* Nếu có icon bên trái */
+.Goiychoban .top .result-label img {
+    width: 20px; /* Chỉnh kích thước icon */
+    height: 20px;
+    margin-right: 8px; /* Tạo khoảng cách giữa icon và chữ */
+}
+.Goiychoban .bot .result-label img {
+    width: 20px; /* Chỉnh kích thước icon */
+    height: 20px;
+    margin-right: 8px; /* Tạo khoảng cách giữa icon và chữ */
+}
+
+.Goiychoban .top .result-label span
+{
+    color: white;
+}
+.Goiychoban .bot .result-label span
+{
+    color: white;
+}
+.Goiychoban .top .lb-tragop
+{
+    color: rgba(0, 0, 0, 0.8); /* Màu đen với độ trong suốt 50% */    
+    font-size: 15px;
+    background-color: #f2f4f7;
+    padding: 5px;
+    margin-right: 90px;
+}
+.Goiychoban .bot .lb-tragop
+{
+    color: rgba(0, 0, 0, 0.8); /* Màu đen với độ trong suốt 50% */    
+    font-size: 15px;
+    background-color: #f2f4f7;
+    padding: 5px;
+    margin-right: 90px;
+}
+.Goiychoban .top h3
+{
+    text-align: left;
+    margin-left: 8px;
+}
+.Goiychoban .bot h3
+{
+    text-align: left;
+    margin-left: 8px;
+}
+.Goiychoban .top .item-compare span
+{
+    color: rgba(0, 0, 0, 0.6); /* Màu đen với độ trong suốt 50% */    
+    background-color: #f2f4f7;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 45px;
+}
+.Goiychoban .bot .item-compare span
+{
+    color: rgba(0, 0, 0, 0.6); /* Màu đen với độ trong suốt 50% */    
+    background-color: #f2f4f7;
+    padding: 5px;
+    font-size: 14px;
+    margin-right: 45px;
+}
+.Goiychoban .top .item-txt-online span {
+    color: #fd853a !important;
+    font-weight: 700;
+    display: inline-block; /* Giúp áp dụng margin chính xác hơn */
+    margin-top: 15px; /* Điều chỉnh khoảng cách phía trên */
+    margin-right: 45px;
+}
+.Goiychoban .bot .item-txt-online span {
+    color: #fd853a !important;
+    font-weight: 700;
+    display: inline-block; /* Giúp áp dụng margin chính xác hơn */
+    margin-top: 15px; /* Điều chỉnh khoảng cách phía trên */
+    margin-right: 45px;
+}
+.Goiychoban .top .price {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 75px;
+}
+.Goiychoban .bot .price {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 75px;
+}
+.Goiychoban .top .box-p {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.Goiychoban .bot .box-p {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.Goiychoban .top .box-p span {
+    color: red;
+    margin-left: 6px;
+}
+.Goiychoban .bot .box-p span {
+    color: red;
+    margin-left: 6px;
+}
+.Goiychoban .top .rating_Compare {
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+    margin-right: 50px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */    
+
+}
+.Goiychoban .bot .rating_Compare {
+    display: flex;
+    font-size: 15px;
+    font-weight: 100;
+    margin-right: 50px;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */    
+
+}
+.Goiychoban .top .rating_Compare span {
+    margin-left: 5px;
+}   
+.Goiychoban .bot .rating_Compare span {
+    margin-left: 5px;
+}  
+.Goiychoban h2
+{
+    font-size: 25px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.toshiba h2
+{
+    font-size: 26px;
+    margin-left: 10%;
+    padding-top: 30px;
+
+}
+.toshiba img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.gianhanguudai h2
+{
+    font-size: 26px;
+    margin-left: 10%;
+    padding-top: 30px;
+}
+.gianhanguudai .hinhanh
+{
+    width: 80%;
+    display: flex;
+    flex-grow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+    gap: 15px;
+    margin-top: 20px;
+}
+.gianhanguudai .hinhanh img
+{
+    width: 360px;
+    height: 520px;
+
+}
+
+.moinguoitimkiem
+{
+    background-color: white;
+    max-width: 80%;
+    margin: auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); /* Bóng nhẹ hơn */
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.moinguoitimkiem .listimkiem
+{
+   
+    background-color: #f2f4f7;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.moinguoitimkiem .listimkiem ul {
+    display: flex;
+    flex-wrap: wrap;         
+    justify-content: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    gap: 20px;     
+    padding: 20px;   
+}
+.moinguoitimkiem .listimkiem a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+
+
+
