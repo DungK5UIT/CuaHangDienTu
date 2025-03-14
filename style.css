@@ -91,10 +91,15 @@ button {
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 12%;
-    background-color: #2A83E9;
+    background-color: #A1C9F1;
     padding-top: 15px;
     padding-bottom: 15px;
     transition: all 0.3s ease-in-out;
+}
+.header-top h1
+{
+    color: yellow;
+    padding-left: 10px;
 }
 
 /* Khi lướt xuống, thêm class này để cố định header */
@@ -106,25 +111,11 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng */
     z-index: 1000;
 }
-
-
-[class^="iconnewglobal-"], [class*="iconnewglobal-"] {
-    background-image: url(https://cdnv2.tgdd.vn/webmwg/2024/ContentMwg/images/homev2/desk/iconnew-min.png?v=6);
-    background-repeat: no-repeat;
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    vertical-align: middle;
-    background-size: 310px 257px;
+.header-top >img
+{
+    width: 50px;
+    height: 40px;
 }
-
-.iconnewglobal-logoheaddmx {
-    background-position: 0 -130px;
-    width: 229px;
-    height: 41px;
-}
-
 .header-top span {
     padding-left: 5px;
     font-size: 22px;
